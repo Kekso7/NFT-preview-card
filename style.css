@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: var(--Very-dark-blue1);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.container {
+ 
+    max-width: 350px;
+    margin: 0 auto;
+    
+   
+}
+
+.box{
+    padding: 20px;
+    margin: 2rem 1rem;
+    background-color: var(--Very-dark-blue2);
+    border-radius: 20px;
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+
+
+.content h1{
+
+    color: var(--White);
+    font-size: 1.5rem;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.content h1:hover{
+    color: var(--Cyan);
+}
+
+p{
+    color: var(--Soft-blue);
+}
+
+.eth-days{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.eth, .days{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.eth p{
+    color: var(--Cyan);
+    font-weight: 600;
+    padding-left: 5px;
+
+}
+
+.days p{
+    padding-left: 5px;
+}
+
+.creator{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.creator img{
+    width: 10%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+
+}
+
+.creator p a{
+    text-decoration: none;
+    color: var(--White);
+
+}
+
+.creator p a:hover{
+    color: var(--Cyan);
+}
+
+.img-hover img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    transform: translate(-50%, -50%);
+}
+.img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.4);
+    display: none;
+    
+}
+
+.card:hover .img-hover{
+    display: block;
+ 
+}
